@@ -22,7 +22,7 @@ function timer(logger = console.log) {
 
 function timer3(logger = console.log) {
   for (var i = 0; i < 10; i++) {
-    setTimeout((x => logger(x))(i), 100);
+    setTimeout((x => () => logger(x))(i), 100);
   }
 } */
 /*= ============================================ */
