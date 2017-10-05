@@ -25,6 +25,7 @@ function timer3(logger = console.log) {
     setTimeout((x => () => logger(x))(i), 100);
   }
 } */
+
 /*= ============================================ */
 
 /**
@@ -39,6 +40,7 @@ function customBind(func, context, ...args) {
     return func.call(context, ...args, ...newArgs);
   };
 }
+
 /*= ============================================ */
 
 /**
@@ -80,6 +82,7 @@ function anagram(first, second) {
   }
   return arrayOfUnicode.every(x => !x);
 }
+
 /*= ============================================ */
 
 /**
@@ -89,7 +92,8 @@ function anagram(first, second) {
  * @return {Array<number>} массив уникальных значений, отсортированный по возрастанию
  */
 function getUnique(arr) {
-  return Array.from(new Set(arr)).sort((a, b) => a - b);
+  return Array.from(new Set(arr))
+    .sort((a, b) => a - b);
 }
 
 /**
@@ -102,7 +106,8 @@ function getIntersection(first, second) {
   const set1 = new Set(first);
   const set2 = new Set(second);
 
-  return Array.from(new Set([...set1].filter(x => set2.has(x)))).sort((a, b) => a - b);
+  return Array.from(new Set([...set1].filter(x => set2.has(x))))
+    .sort((a, b) => a - b);
 }
 
 
@@ -123,7 +128,8 @@ function getIntersection(first, second) {
  */
 function isIsomorphic(left, right) {
   return (left.length === right.length
-        && (left.split('').reduce((res, current, index) => (current !== right[index] ? --res : res), 1) >= 0));
+    && (left.split('')
+      .reduce((res, current, index) => (current !== right[index] ? --res : res), 1) >= 0));
 }
 
 module.exports = {
