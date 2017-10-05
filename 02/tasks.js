@@ -10,7 +10,7 @@ function timer(logger = console.log) {
   }
 }
 
-function timer2(logger = console.log) {
+/* function timer2(logger = console.log) {
   for (var i = 0; i < 10; i++) {
     (x => {
       setTimeout(() => {
@@ -24,7 +24,7 @@ function timer3(logger = console.log) {
   for (var i = 0; i < 10; i++) {
     setTimeout((x => logger(x))(i), 100);
   }
-}
+} */
 /*= ============================================ */
 
 /**
