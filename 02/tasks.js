@@ -106,7 +106,7 @@ function getIntersection(first, second) {
   const set1 = new Set(first);
   const set2 = new Set(second);
 
-  return Array.from(new Set([...set1].filter(x => set2.has(x))))
+  return Array.from([...set1].filter(x => set2.has(x)))
     .sort((a, b) => a - b);
 }
 
