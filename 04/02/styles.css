@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #020201;
+    background: #4e4051;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: 0 2px #e6ded4, 0 3px #4e4051;
+}
+
+.foodstuff {
+    margin: auto;
+    width: 70%;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.foodstuff thead tr {
+    background: #968089;
+    border-bottom: 8px solid #4e4051;
+}
+
+.foodstuff thead tr:hover {
+    background: #968089;
+}
+
+.foodstuff tr {
+    background: #e3c3d4;
+}
+
+.foodstuff tr:nth-child(even) {
+    background: #e6ded4;
+}
+
+.foodstuff tr:hover {
+    background: #f9f9f9;
+}
+
+.foodstuff th, td {
+    width: 20%;
+    padding: 10px;
+}
+
+.foodstuff td:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.piggy {
+    border-spacing: 8px;
+    max-width: 320px;
+    margin: auto;
+}
+
+.piggy td {
+    padding: 8px;
+}
+
+.piggy td:nth-child(1) {
+    background: #40bf80;
+}
+
+.piggy td:nth-child(2) {
+    background: #33cc99;
+}
+
+.piggy td:nth-child(3) {
+    background: #26d9bb;
+}
+
+.piggy td:nth-child(4) {
+    background: #19e6e6;
+}
+
+.piggy td:nth-child(5) {
+    background: #0dccf2;
+}
+
+.piggy td:nth-child(6) {
+    background: #01aafe;
+}
