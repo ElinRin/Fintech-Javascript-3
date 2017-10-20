@@ -6,7 +6,7 @@ body {
   max-width: 960px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 0px auto;
+  margin: 0 auto;
   position: relative;
   text-align: center;
 }
