@@ -1,41 +1,41 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    color: #020201;
-    background: #4e4051;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #020201;
+  background: #4e4051;
 }
 
 h1 {
-    padding: 10px;
-    margin: 1em 0 0.5em 0;
-    font-weight: normal;
-    font-family: 'Ultra', sans-serif;
-    font-size: 42px;
-    line-height: 42px;
-    text-transform: uppercase;
-    text-shadow: 0 2px #e6ded4, 0 3px #4e4051;
+  padding: 10px;
+  margin: 1em 0 0.5em 0;
+  font-weight: normal;
+  font-family: 'Ultra', sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px #e6ded4, 0 3px #4e4051;
 }
 
 ul, ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 ul li:before {
-    color: yellow;
-    content: '•';
-    padding-right: 10px;
+  color: yellow;
+  content: '•';
+  padding-right: 10px;
 }
 
 ol li {
-    counter-increment: count;
+  counter-increment: count;
 }
 
 ol li::before {
-    color: blue;
-    content: counter(count) '.';
+  color: blue;
+  content: counter(count) '.';
 }
 
 #it {
-    color: red;
+  color: red;
 }
