@@ -1,0 +1,70 @@
+body {
+  box-sizing: border-box;
+  font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.tags {
+  margin: 0 auto;
+  padding: 0 18px;
+  max-width: 864px;
+}
+
+.tags ul {    
+  display: flex;
+  letter-spacing: 0.9px;
+  font-size: 13px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 45px auto 77px;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: solid 1px #dddfe0;
+  list-style: none;
+  justify-content: space-between;
+  max-width: 864px;
+}
+
+.tags li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding:  14px 36px 14px 12px;
+  margin: 6px 0;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  background-color: #eef2f7;
+  border-radius: 6px;
+  max-width: 252px;
+
+}
+
+.tags input {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+}
+
+.tags li::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 246px;
+  height: 42px;
+  width: 54px;
+  background-image: linear-gradient(to right, rgba(238, 242, 247, 0), #eef2f7 30px, #eef2f7);
+  content: '';
+}
