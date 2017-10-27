@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: Roboto,'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 *,
@@ -8,12 +8,12 @@ body {
 *::after {
   box-sizing: inherit;
 }
- 
+
 .menu {
   background-color: #3e4758;
 }
 
-.menu ul {    
+.menu ul {
   display: flex;
   color: #fff;
   list-style: none;
@@ -39,7 +39,7 @@ body {
   text-transform: uppercase;
   font-size: 13px;
 }
-  
+
 .menu li:hover {
   border-bottom: 3px solid #ffdd2d;
 }
