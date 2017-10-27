@@ -27,7 +27,6 @@ body {
   z-index: 0;
   position: relative;
   display: flex;
-  padding:  14px 36px 14px 12px;
   flex-direction: column;
   padding: 14px 35px 14px 10px;
   margin: 7px 7px 5px;
@@ -46,7 +45,7 @@ body {
   height: 12px;
 }
 
-.tags li:after {
+.tags li::after {
   position: absolute;
   z-index: 1;
   top: 0;
