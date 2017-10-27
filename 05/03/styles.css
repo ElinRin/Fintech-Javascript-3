@@ -24,17 +24,17 @@ body {
 }
 
 .tags li {
+  z-index: 0;
   position: relative;
   display: flex;
+  padding:  14px 36px 14px 12px;
   flex-direction: column;
   padding: 14px 35px 14px 10px;
   margin: 7px 7px 5px;
   overflow: hidden;
-  text-overflow: clip;
   white-space: nowrap;
   background-color: #eef2f7;
   border-radius: 6px;
-
 }
 
 .tags input {
@@ -52,7 +52,6 @@ body {
   top: 0;
   left: 275px;
   height: 42px;
-  width: 54px;
-  background-image: linear-gradient(to right, rgba(238, 242, 247, 0), #eef2f7 30px, #eef2f7);
+  background: linear-gradient(to right, rgba(238, 242, 247, 0.4), #eef2f7);
   content: '';
 }
