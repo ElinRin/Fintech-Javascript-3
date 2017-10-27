@@ -21,32 +21,20 @@ body {
   flex-wrap: wrap;
   padding: 12px;
   border: solid 1px #dddfe0;
-<<<<<<< HEAD
-  max-width: 864px;
-=======
->>>>>>> lesson-05
 }
 
 .tags li {
   z-index: 0;
   position: relative;
   display: flex;
-<<<<<<< HEAD
-  padding:  14px 36px 14px 12px;
-=======
   flex-direction: column;
   padding: 14px 35px 14px 10px;
   margin: 7px 7px 5px;
->>>>>>> lesson-05
   overflow: hidden;
   white-space: nowrap;
   background-color: #eef2f7;
   border-radius: 6px;
-<<<<<<< HEAD
   margin: 7px 6px 5px;
-=======
-
->>>>>>> lesson-05
 }
 
 .tags input {
@@ -58,16 +46,11 @@ body {
   height: 12px;
 }
 
-.tags li:after {
+.tags li::after {
   position: absolute;
   z-index: 1;
   top: 0;
-<<<<<<< HEAD
-  left: 246px;
-  min-width: 43px;
-=======
   left: 275px;
->>>>>>> lesson-05
   height: 42px;
   background: linear-gradient(to right, rgba(238, 242, 247, 0.4), #eef2f7);
   content: '';
