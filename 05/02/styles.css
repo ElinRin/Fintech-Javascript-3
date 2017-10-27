@@ -25,7 +25,6 @@ body {
   margin-left: 430px;
   padding: 94px 0 50px;
   color: #fff;
-  
 }
 
 .text h1 {
@@ -57,5 +56,5 @@ body {
   position: absolute;
   margin-left: -160px;
   margin-top: -86px;
-  clip: rect(86px,576px,492px,34px);
+  clip: rect(86px, 576px, 492px, 34px);
 }
