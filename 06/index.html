@@ -2,28 +2,124 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet/less" type="text/css" href="./main.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="./main.less"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
     <title>Задание 6.1</title>
 </head>
 <body>
-<h1>Сверстать полную страницу (без футера).</h1>
-<h4>Макеты:</h4>
-<ul>
-    <li><a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a307604687f0394b3ba039">Desktop 1</a></li>
-    <li><a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333">Desktop 2</a></li>
-    <li><a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3076d2fc6273f38fc51c5">Mobile 1</a></li>
-</ul>
-<h4>Особенности:</h4>
-<ul>
-    <li>Брейкпойнт для мобильной: 640px</li>
-    <li>До брейкпойнта верстка ломаться не должна, если ломается и никак иначе не избежать, ввести промежуточный брейкпойнт.</li>
-    <li>Использоваться БЭМ-нэйминг для классов.</li>
-    <li>Использовать less.</li>
-    <li>Повторяющиеся размера, цвета вынести в переменные.</li>
-    <li>Для элементов, у которых могут меняться состояние (цвет текста, бордер, фон, размер, позиция и тп), добавить transition.</li>
-    <li>Тултип также должен появляться с анимацией.</li>
-    <li>Для иконок использовать svg.</li>
-</ul>
+    <header>
+        <img class="img-web" src="img/header-logo.svg" width="197" height="65" alt="Тинькофф">
+        <img class="img-mobile" src="img/logo-mobile.svg" width="50" height="44" alt="Тинькофф">
+        <a href="tel:88005551122">8 800 555-11-22</a>
+        <button type="button" title="Открыть меню">Открыть меню</button>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="">Карты</a></li>
+            <li><a href="">Вклады</a></li>
+            <li><a href="">Платежи&nbsp;и&nbsp;переводы</a></li>
+            <li><a href="">Бонусы</a></li>
+            <li><a href="">Страхование</a></li>
+            <li><a href="">О&nbsp;банке</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div class="banner-context"> 
+            <div class="text">
+                <h1>Карты для&nbsp;вас
+                    <br>прямо сейчас</h1>
+                <p><b>Выбирайте&nbsp;карту, пользуйтесь
+                    <br>удобными&nbsp;сервисами</b><p>
+                <button>Оформить заявку</button>
+            </div>
+        </div>
+    </div>
+    <div class="tags">
+        <h2>Любые категории платежей</h2>
+        <ul>
+            <li>
+                Кафе
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+            <li>
+                Интернет
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+            <li>
+                Телефон
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+            <li>
+                Авто
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+            <li>
+                ЖКХ
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+            <li>
+                Одежда и обувь
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+            <li>
+                Супермаркеты, гастрономы, универмаги и
+                <input type="image" src="img/group-copy-7.svg" alt="Удалить">
+            </li>
+        </ul>
+    </div>
+    <form>
+        <h2>Заполните&nbsp;несколько простых&nbsp;полей</h2>
+        <fieldset class="text-registration">
+            <div>
+                <label>
+                <input type="text">
+                <span class="placeholder">ФИО</span>
+                <img class="img-select" src="img/line-copy-4.svg" alt="Выбрать">
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="text" pattern="[А-Яа-яЁё]{0,30}">
+                <span class="placeholder">Город проживания</span> 
+                <img class="img-error" src="img/stroke-1-copy-2-fill-2-copy-2-stroke-1-copy-2.svg" alt="Ошибка">
+                <span class="additional-info">Для&nbsp;заполнения&nbsp;этого&nbsp;поля&nbsp;не&nbsp;допустимо&nbsp;использовать&nbsp;буквы&nbsp;латинского&nbsp;алфавита</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="tel">
+                    <span class="placeholder">Мобильный телефон</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                <input type="text">
+                <span class="placeholder">Электронная почта</span>
+                <img class="img-info" src="img/stroke-1-fill-2-copy-3.svg" alt="Информация">
+                <span class="additional-info">Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.</span>
+                </label>
+            </div>
+            </fieldset>
+            <fieldset class="select-registration">
+            <h1>Выберите это или другое</h1>
+            <div class="select">
+                <div>
+                    <label>
+                    <input type="radio" name="selector" checked>
+                    <span>Это</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="selector">
+                        <span>Другое</span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>
