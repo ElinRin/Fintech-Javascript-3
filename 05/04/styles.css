@@ -69,11 +69,11 @@ fieldset {
   padding: 12px 20px 39px;
 }
 
-.text-registration p {
+.text-registration .additional-info {
   display: none;
 }
 
-.text-registration input:invalid ~ p {
+.text-registration input:invalid ~ .additional-info {
   display: inline-block;
   font-size: 13px;
   color: #d0021b;
@@ -102,7 +102,7 @@ fieldset {
   cursor: pointer;
 }
 
-.text-registration .img-info:hover ~ p {
+.text-registration .img-info:hover ~ .additional-info {
   position: absolute;
   display: block;
   top: -32px;
