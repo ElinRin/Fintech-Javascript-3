@@ -3,8 +3,64 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Задание 5.4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  
+      <form>
+          <fieldset class="text-registration">
+              <div>
+                <label>
+                  <input type="text">
+                  <span>ФИО</span>
+                  <img class="img-select" src="line-copy-4.png" alt="Выбрать">
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="text" pattern="[А-Яа-яЁё]{0,30}">
+                  <span>Город проживания</span> 
+                  <img class="img-error" src="stroke-1-copy-2-fill-2-copy-2-stroke-1-copy-2.png" alt="Ошибка">
+                  <p>Для заполнения этого поля не допустимо использовать буквы латинского алфавита</p>
+                </label>
+              </div>
+              <div>
+                  <label>
+                    <input type="tel">
+                    <span>Мобильный телефон</span>
+                  </label>
+              </div>
+              <div>
+                <label>
+                  <input type="text">
+                  <span>Электронная почта</span>
+                  <img class="img-info" src="stroke-1-fill-2-copy-3.png" alt="Информация">
+                  <p>Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.</p>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="select-registration">
+  
+              <h1>Выберите это или другое</h1>
+  
+              <div class="select">
+                  <div>
+                    <label>
+                      <input type="radio" name="selector" checked>
+                      <span>Это</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                        <input type="radio" name="selector">
+                        <span>Другое</span>
+                      </label>
+                  </div>
+              </div>
+          </fieldset>
+          <button type="submit">Отправить</button>
+      </form>
 </body>
 </html>
