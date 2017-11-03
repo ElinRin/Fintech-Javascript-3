@@ -8,3 +8,184 @@ body {
 *::after {
   box-sizing: inherit;
 }
+
+form {
+  max-width: 540px;
+  text-align: center;
+  margin: 65px auto 39px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+.text-registration div {
+  position: relative;
+  margin: 24px 0;
+}
+
+.text-registration input {
+  width: 100%;
+  padding: 23px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eef2f7;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.18;
+}
+
+.text-registration input:focus {
+  padding: 32px 20px 14px;
+  background-color: #fff;
+  border: solid 1px #74a3c7;
+  outline: none;
+}
+
+.text-registration input:invalid {
+  border: solid 1px #d0011b;
+}
+
+.text-registration span {
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  color: #74a3c7;
+  font-size: 17px;
+  line-height: 1.18;
+  padding: 23px 20px;
+  cursor: text;
+}
+
+.text-registration input:focus ~ span {
+  font-size: 13px;
+  line-height: 1.15;
+  padding: 12px 20px 39px;
+}
+
+.text-registration .additional-info {
+  display: none;
+}
+
+.text-registration input:invalid ~ .additional-info {
+  display: inline-block;
+  font-size: 13px;
+  color: #d0021b;
+}
+
+.text-registration img {
+  position: absolute;
+  right: 17px;
+  top: 21px;
+}
+
+.text-registration .img-select {
+  right: 18px;
+  top: 31px;
+}
+
+.text-registration .img-error {
+  display: none;
+}
+
+.text-registration input:invalid ~ .img-error {
+  display: inline-block;
+}
+
+.text-registration .img-info {
+  cursor: pointer;
+}
+
+.text-registration .img-info:hover ~ .additional-info {
+  position: absolute;
+  display: block;
+  top: -32px;
+  right: 54px;
+  padding: 16px;
+  width: 284px;
+  border: solid 1px #dddfe0;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #9299a2;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.38;
+}
+
+.select {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.select-registration h1{
+  margin: 15px 0 27px;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  color: #333;
+}
+
+.select div {
+  position: relative;
+  width: calc(50% - 12px);
+  border-radius: 6px;
+  border: solid 1px #dddfe0;
+  color: #333;
+  text-align: left;
+  font-size: 17px;
+}
+
+.select input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.select span {
+  display: block;
+  position: relative;
+  padding: 21px 18px;
+  color: #74a3c7;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.select span::after {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #eef2f7;
+  content: '';
+}
+
+.select input:checked ~ span {
+  color: #333;
+  opacity: 1;
+}
+
+.select input:checked ~ span::after {
+  border: 11px solid #ffdd2f;
+  background-color: #3e4757;
+}
+
+form button {
+  border: none;
+  margin: 49px 0 42px;
+  padding: 23px 86px;
+  border-radius: 6px;
+  background-color: #ffdd2d;
+  color: #333;
+  text-align: center;
+  font-size: 17px;
+}
