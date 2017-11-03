@@ -23,7 +23,6 @@ fieldset {
   border: none;
 }
 
-
 .text-registration div {
   position: relative;
   margin: 24px 0;
@@ -126,7 +125,7 @@ fieldset {
   justify-content: space-between;
 }
 
-.select-registration h1{
+.select-registration h1 {
   margin: 15px 0 27px;
   font-size: 21px;
   font-weight: 300;
