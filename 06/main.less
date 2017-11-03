@@ -25,10 +25,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
   margin: auto;
   padding: 0 18px;
   max-width: 864px;
+
   img {
     width: 197px;
     height: 65px;
@@ -39,18 +39,23 @@ header {
       height: 44px;
     }
   }
+
   .img-web {
     display: block;
+
     @media (max-width: @mobile) {
       display: none;
     }
   }
+
   .img-mobile {
     display: none;
+
     @media (max-width: @mobile) {
       display: block;
     }
   }
+
   button {
     display: none;
     width: 25px;
@@ -59,10 +64,12 @@ header {
     background-color: inherit;
     background-image: url(img/hamburger.svg);
     font-size: 0;
+
     @media (max-width: @mobile) {
       display: block;
     }
   }
+
   a {
     color: @text-color;
     text-decoration: none;
@@ -75,6 +82,7 @@ header {
 .menu {
   background-color: @nav-color;
   display: block;
+
   ul {
     display: flex;
     color: @background-color;
@@ -86,14 +94,17 @@ header {
     padding: 0 18px;
     max-width: 864px;
   }
+
   li {
     border-bottom: 3px solid @nav-color;
     margin: 0;
     padding: 0;
+
     &:hover {
       border-bottom: 3px solid @main-color;
     }
   }
+
   a {
     display: inline-block;
     padding: 25px 0 18px;
@@ -102,6 +113,7 @@ header {
     text-transform: uppercase;
     font-size: 13px;
   }
+
   @media (max-width: @mobile) {
     display: none;
   }
@@ -117,11 +129,13 @@ header {
   margin: 0 auto;
   padding: 0 18px;
   max-width: 864px;
+
   @media (max-width: @mobile) {
     margin: 0 0 30px;
     background-position: center;
     background-repeat: no-repeat;
   }
+
   &::before {
     position: absolute;
     z-index: 0;
@@ -133,12 +147,15 @@ header {
     background-repeat: no-repeat;
     content: '';
     transform: translate(-300px);
+
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(img/cards@2x.png);
     }
+
     @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
       background-image: url(img/cards@3x.png);
     }
+
     @media (max-width: @mobile) {
       transform: none;
     }
@@ -152,18 +169,21 @@ header {
   color: @background-color;
   position: relative;
   z-index: 0;
+
   h1 {
     font-size: 50px;
     font-weight: 100;
     line-height: 1;
     margin: 0 0 17px;
   }
+
   p {
     margin: 0 0 19px;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
   }
+
   button {
     text-align: center;
     font-size: 17px;
@@ -173,11 +193,13 @@ header {
     background-color: @main-color;
     color: #333;
     padding: 19px 35px;
+
     @media (max-width: @mobile) {
       margin-top: 141px;
       padding: 21px 70px;
     }
   }
+
   @media (max-width: @mobile) {
     margin-left: 0;
     margin-top: 26px;
@@ -186,11 +208,11 @@ header {
   }
 }
 
-
 .tags {
   margin: 0 auto;
   padding: 0 18px;
   max-width: 864px;
+
   h2 {
     margin: 82px 0 50px;
     color: @text-color;
@@ -203,6 +225,7 @@ header {
       font-size: 30px;
     }
   }
+
   ul {
     display: flex;
     font-size: 13px;
@@ -210,6 +233,7 @@ header {
     padding: 12px;
     border: solid 1px @form-color;
   }
+
   li {
     z-index: 0;
     position: relative;
@@ -221,6 +245,7 @@ header {
     white-space: nowrap;
     background-color: @input-color;
     border-radius: 6px;
+
     &::after {
       position: absolute;
       z-index: 1;
@@ -232,6 +257,7 @@ header {
       content: '';
     }
   }
+
   input {
     position: absolute;
     z-index: 2;
@@ -246,6 +272,7 @@ form {
   max-width: 540px;
   text-align: center;
   margin: 65px auto 39px;
+
   h2 {
     margin: 76px 0 43px;
     color: @text-color;
@@ -256,11 +283,18 @@ form {
 
     @media (max-width: @mobile) {
       font-size: 30px;
-
-      &--form {
-        font-size: 24px;
-      }
     }
+  }
+
+  button {
+    border: none;
+    margin: 49px 0 42px;
+    padding: 23px 86px;
+    border-radius: 6px;
+    background-color: @main-color;
+    color: @text-color;
+    text-align: center;
+    font-size: 17px;
   }
 }
 
@@ -273,10 +307,12 @@ fieldset {
 }
 
 .text-registration {
+
   div {
     position: relative;
     margin: 12px 0;
   }
+
   input {
     width: 100%;
     padding: 23px 20px;
@@ -286,6 +322,7 @@ fieldset {
     color: @text-color;
     font-size: 17px;
     line-height: 1.18;
+
     &:focus,
     &:valid,
     &:invalid
@@ -295,9 +332,11 @@ fieldset {
       border: solid 1px @placeholser-color;
       outline: none;
     }
+
     &:invalid {
       border: solid 1px #d0011b;
     }
+
     &:focus ~ .placeholder,
     &:valid ~ .placeholder,
     &:invalid ~ .placeholder  {
@@ -305,15 +344,18 @@ fieldset {
       line-height: 1.15;
       padding: 12px 20px 39px;
     }
+
     &:invalid ~ .additional-info {
       display: inline-block;
       font-size: 13px;
       color: #d0021b;
     }
+
     &:invalid ~ .img-error {
       display: inline-block;
     }
   }
+
   .placeholder {
     position: absolute;
     opacity: 0.6;
@@ -325,23 +367,29 @@ fieldset {
     padding: 23px 20px;
     cursor: text;
   }
+
   .additional-info {
     display: none;
   }
+
   img {
     position: absolute;
     right: 17px;
     top: 21px;
   }
+
   .img-select {
     right: 18px;
     top: 31px;
   }
+
   .img-error {
     display: none;
   }
+
   .img-info {
     cursor: pointer;
+
     &:hover ~ .additional-info {
       position: absolute;
       display: block;
@@ -361,6 +409,7 @@ fieldset {
 }
 
 .select-registration {
+
   h1 {
     margin: 15px 0 27px;
     font-size: 21px;
@@ -376,6 +425,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   div {
     position: relative;
     width: calc(50% - 3px);
@@ -385,18 +435,22 @@ fieldset {
     text-align: left;
     font-size: 17px;
   }
+
   input {
     position: absolute;
     visibility: hidden;
+
     &:checked ~ span {
       color: @text-color;
       opacity: 1;
     }
+
     &:checked ~ span::after {
       border: 11px solid @main-color;
       background-color: @nav-color;
     }
   }
+  
   span {
     display: block;
     position: relative;
@@ -404,6 +458,7 @@ fieldset {
     color: @placeholser-color;
     opacity: 0.6;
     cursor: pointer;
+
     &::after {
       position: absolute;
       top: 18px;
@@ -414,18 +469,5 @@ fieldset {
       background-color: @input-color;
       content: '';
     }
-  }
-}
-
-form {
-  button {
-    border: none;
-    margin: 49px 0 42px;
-    padding: 23px 86px;
-    border-radius: 6px;
-    background-color: @main-color;
-    color: @text-color;
-    text-align: center;
-    font-size: 17px;
   }
 }
