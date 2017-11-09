@@ -1,10 +1,12 @@
 const throttle = (time, callback) => {
-  let timer = 0;
+  let lastCall = 0;
+  let now = 0;
 
   return (...args) => {
-    if (Date.now() > time + timer) {
+    now = Date.now();
+    if (now > time + lastCall) {
       callback.apply(this, args);
-      timer = Date.now();
+      lastCall = now;
     }
   };
 };
