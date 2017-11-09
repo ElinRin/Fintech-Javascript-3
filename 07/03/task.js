@@ -3,7 +3,7 @@ function throttle(time, callback) {
 
   return (...args) => {
     if (Date.now() > time + timer) {
-      callback(...args);
+      callback.apply(this, args);
       timer = Date.now();
     }
   };
