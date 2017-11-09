@@ -1,4 +1,4 @@
-function throttle(time, callback) {
+const throttle = (time, callback) => {
   let timer = 0;
 
   return (...args) => {
@@ -7,6 +7,6 @@ function throttle(time, callback) {
       timer = Date.now();
     }
   };
-}
+};
 
 module.exports = { throttle };
