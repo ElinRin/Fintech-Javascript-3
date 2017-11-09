@@ -1,9 +1,9 @@
 function throttle(time, callback) {
   let timer = 0;
 
-  return () => {
+  return (...args) => {
     if (Date.now() >= time + timer) {
-      callback();
+      callback(...args);
       timer = Date.now();
     }
   };
