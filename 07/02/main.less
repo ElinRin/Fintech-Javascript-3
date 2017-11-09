@@ -21,10 +21,9 @@ ol {
 }
 
 li {
-    font-size: 5.6rem;
-    text-align: center;
-    line-height: 1;
-    animation: neon .08s ease-in-out infinite alternate;
+  font-size: 5.6rem;
+  text-align: center;
+  line-height: 1;
 }
 
 .container {
@@ -34,50 +33,35 @@ li {
   justify-content: center;
 }
 
-button {  
+button {
   color: #c6e2ff;
-  display: inline-block; 
+  display: inline-block;
   padding: 15px;
-  font-weight: bold; margin: 10px; 
-  font-size: 20px; 
-   
-  border-radius: 10px; 
-  -webkit-border-radius: 10px; 
-  -moz-border-radius: 10px; 
-  box-shadow: 1px 1px 0 #ccc,  
-  2px 2px 0 #c9c9c9, 
-  3px 4px 0 #bbb, 
+  font-weight: bold;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow:
+    1px 1px 0 #ccc,
+    2px 2px 0 #c9c9c9,
+    3px 4px 0 #bbb,
+    -1px 1px 0 #ccc,
+    -2px 2px 0 #c9c9c9,
+    -3px 4px 0 #bbb;
+  background-color: #041f3a;
+}
 
-  -1px 1px 0 #ccc,  
-  -2px 2px 0 #c9c9c9, 
-  -3px 4px 0 #bbb;  
+button:hover {
+  background-color: #5c6f81;
+}
 
-  background:linear-gradient(top,#5c6f81,#041f3a); 
-  background:-webkit-linear-gradient(top,#5c6f81,#041f3a); /* для Chrome и Safari */ 
-  background:-o-linear-gradient(top,#5c6f81,#041f3a); /* для Opera */ 
-  background:-moz-linear-gradient(top,#5c6f81,#041f3a); /* для Firefox */ 
-  background:-ms-linear-gradient(top,#5c6f81,#041f3a); /* для IE10+ */  
-}  
-
-button:hover  
-{ 
-  background:linear-gradient(bottom,#5c6f81,#041f3a); 
-  background:-webkit-linear-gradient(bottom, #5c6f81 5%,#041f3a); /* для Chrome и Safari */ 
-  background:-o-linear-gradient(bottom,#5c6f81,#041f3a);/* для Opera */ 
-  background:-moz-linear-gradient(bottom,#5c6f81,#041f3a); /* для Firefox */ 
-  background:-ms-linear-gradient(bottom,#5c6f81,#041f3a); /* для IE10+ */ 
-  text-decoration: none;
-} 
-
-button:active { 
-  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1)  
-
-inset;box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1)  
-
-inset; 
-  -moz-transform: translatey(3px); /* Для Firefox */ 
-  -ms-transform: translatey(3px); /* Для IE */ 
-  -webkit-transform: translatey(3px); /* Для Safari, Chrome, iOS */ 
-  -o-transform:translatey(3px); /* Для Opera */ 
-  transform: translatey(3px); 
+button:active {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  -o-transform: translateY(3px);
+  transform: translateY(3px);
 }
