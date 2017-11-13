@@ -3,22 +3,31 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet/less" type="text/css" href="./main.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
-    <script src="./main.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
     <title>Задание 7.4</title>
 </head>
 <body>
-<h1>Скроллинг с подгрузкой</h1>
-<p>
-    Реализовать скроллинг с подргузкой содержимого при достижении нижней части страницы.
-
-    В качестве источника содержимого используйте github и список репозиториев facebook.
-    Для того, чтобы поиграться с API и возвращаемым содержимым, в консоли можете использовать следующие утилиты httpie и jq:
-    <br>
-    <code>http -p b "https://api.github.com/orgs/facebook/repos?page=1" | jq 'length'</code>
-    <br>
-    Нужно выводить список репозиториев (для каждого название, описание, ссылку, дату создания и дату последнего коммита).
-    Дизайн страницы - на ваш вкус.
-</p>
+<div class="newCards"></div>
+<div class="load">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+</div>
+<template id="repositories">
+    <div class="repositories__card">
+        <a class="repositories__card__name"><b>Name: </b></a>
+        <br>
+        <span class="repositories__card__description"><b>Description: </b></span>
+        <br>
+        <a class="repositories__card__link"><b>Link: </b></a>
+        <br>
+        <span class="repositories__card__date"><b>Date of creation: </b></span>
+        <br>
+        <span class="repositories__card__commit"><b>Date of last commit: </b></span>
+        <br>
+    </div>
+</template>
+<script src="./main.js" ></script>
 </body>
 </html>

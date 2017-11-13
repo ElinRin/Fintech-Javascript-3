@@ -1,4 +1,122 @@
+@item-width: 300px;
+body {
+  box-sizing: border-box;
+  font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(3, 3, 46);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a, span {
+  padding: 10px;
+}
+
 a {
-  padding: 2px;
+  text-decoration: none;
+  color: rgb(76, 76, 192);
+}
+
+.repositories__card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px;
   border: 1px solid black;
+  display: block;
+  width: @item-width;
+  box-sizing: border-box;
+  background-color: rgb(208, 208, 243);
+}
+
+.newCards {
+  display: grid;
+  border: 1px solid rgb(109, 109, 124);
+  background-color: rgb(16, 16, 41);
+  padding: 5px;
+  margin: 10px;
+  grid-gap: 1px;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, @item-width);
+  height: 100%;
+}
+
+.load {
+  width: 200px;
+  height: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.item-1 {
+  background-color: #FA5667;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: item-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-2 {
+  background-color: #7A45E5;
+  top: 0;
+  right: 0;
+  animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-3 {
+  background-color: #1B91F7;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-4 {
+  background-color: #FAC24C;
+  bottom: 0;
+  left: 0;
+  animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+@keyframes item-1_move {
+  0%, 100% {transform: translate(0, 0)} 
+  25% {transform: translate(0, 100px)} 
+  50% {transform: translate(100px, 100px)} 
+  75% {transform: translate(100px, 0)} 
+}
+
+@keyframes item-2_move {
+  0%, 100% {transform: translate(0, 0)} 
+  25% {transform: translate(-100px, 0)} 
+  50% {transform: translate(-100px, 100px)} 
+  75% {transform: translate(0, 100px)} 
+}
+
+@keyframes item-3_move {
+  0%, 100% {transform: translate(0, 0)} 
+  25% {transform: translate(0, -100px)} 
+  50% {transform: translate(-100px, -100px)} 
+  75% {transform: translate(-100px, 0)} 
+}
+
+@keyframes item-4_move {
+  0%, 100% {transform: translate(0, 0)} 
+  25% {transform: translate(100px, 0)} 
+  50% {transform: translate(100px, -100px)} 
+  75% {transform: translate(0, -100px)} 
 }
