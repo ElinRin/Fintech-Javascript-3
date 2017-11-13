@@ -3,13 +3,11 @@ const throttle = (time, callback) => {
   let now = 0;
   const callbackWrapper = (...args) => {
     now = Date.now();
-    const timeLeft = lastCall + time - now;
-
-    if (timeLeft > 0) {
-      setTimeout(() => callbackWrapper(...args), timeLeft);
-    } else {
+    if (now > time + lastCall) {
       callback(...args);
       lastCall = now;
+    } else {
+      setTimeout(() => callbackWrapper(...args), lastCall + time - now);
     }
   };
 
